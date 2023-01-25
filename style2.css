@@ -15,6 +15,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, *:before, *:after {
@@ -29,6 +30,18 @@ html, body {
 }
 
 .phone {
+  display: none;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.wrapper {
+  display: none;
+}
+
+#active {
   display: none;
 }
 
@@ -48,7 +61,7 @@ html, body {
   position: relative;
   font-family:var(--font-fam1);
   text-decoration: none;
-  z-index: 999;
+  z-index: ;
   text-transform: uppercase;
   background: ;
 }
@@ -63,7 +76,6 @@ html, body {
   width: auto;
   position: absolute;
   opacity: 0.9;
-
 }
 
 .nav .logo:hover{
@@ -80,15 +92,9 @@ html, body {
   padding: 0 1.7em;
   font-size: 20px;
   color: var(--text-black);
-  font-weight: 300;
+  font-weight: 400;
   position: relative;
 }
-
-section {
-  width: 100%;
-  height: 100vh;
-  }
-
 
 .main__section {
   height: 80vh;
@@ -97,15 +103,13 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ;
-  background-position: top ;
-  background-size: cover;
+  background-color: var(--bg-white);
+
 }
 
 .main__section_content {
   height: 100%;
   width: 100%;
-  z-index: 2;
   margin: 0;
   padding: 0;
   display: flex;
@@ -115,7 +119,7 @@ section {
 } 
 
 .main__section_content img {
-  margin-top: ;
+  margin-bottom: 60px;
   width: auto;
   height: 480px;
   filter: drop-shadow(10px 10px 14px #909090);
@@ -141,14 +145,14 @@ section {
   text-transform: uppercase;
   font-family: var(--font-fam1);
   text-transform: ;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
   padding: 12px 8px;
   border-bottom: 1px solid  #A1A1A1;
 }
 
 .our__story {
-  height: 80vh;
+  height: 70vh;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -156,7 +160,7 @@ section {
   justify-content: center;  
   position: relative;
   background: var(--bg-white);
-  z-index: 999;
+  z-index: ;
 }
 
 .our__story_caption {
@@ -178,7 +182,7 @@ section {
 .our__story_caption h2 {
   font-family: var(--font-fam1);
   font-size: 42px;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--text-black);
   margin: 20px 0 40px 0;
 }
@@ -231,7 +235,7 @@ hr {
   border-top: 1px solid #F9F9F9;
   position: relative;
   width: 60%;
-  z-index: 999;
+  z-index: ;
 }
 
 .myFooter {
@@ -244,7 +248,7 @@ hr {
   gap: 60px;
   position: relative;
   background: var(--bg-white);
-  z-index: 999;
+  z-index: ;
 }
 
 .myFooter img {
@@ -258,7 +262,7 @@ hr {
   font-family: var(--font-fam1);
   font-size: 15px;
   color: var(--text-black);
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -266,6 +270,7 @@ hr {
 /*CONTACT PAGE*/
 .contact-us {
   position: relative;
+  height: 100vh;
 }
 
 #necklace {
@@ -280,7 +285,7 @@ hr {
 
 .contact-caption {
   position: relative;
-  height: 25%;
+  height: 20%;
   width: 100%;
   background-color: #F2F2F2;
   display: flex;
@@ -538,9 +543,132 @@ textarea::placeholder {
 
 /*Phone styling */
 @media only screen and (max-width: 768px) {
+
+/*Menu*/
+.wrapper {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #ECE8DD;
+  clip-path: circle(25px at calc(100% - 45px) 45px);
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+
+#active:checked ~ .wrapper {
+  clip-path: circle(75%);
+}
+
+.menu-btn {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 20;
+  text-align: center;
+  line-height: 50px;
+  height: 50px;
+  width: 50px;
+  border:none;
+  background: var(--bg-white);
+  color: var(--text-black);
+  font-size: 12px;
+  cursor: pointer;
+  font-family: var(--font-fam2);
+  font-size: 32px;
+  font-weight: 400;
+}
+
+#active:checked ~ .menu-btn {
+  background: #ECE8DD;
+  color: var(--text-black);
+}
+
+#active:checked ~ .menu-btn i:before {
+  content: "\f00d";
+}
+
+#active {
+  display: none;
+}
+
+.wrapper ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.wrapper ul li {
+  padding: 0;
+  margin: 30px 0;
+}
+
+.wrapper ul li a {
+  position: relative;
+  color: var(--text-black);
+  text-decoration: none;
+  font-size: 28px;
+  font-family: var(--font-fam1);
+  font-weight: 400;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.wrapper a:hover, li:hover {
+  color: var(--text-balck);
+  cursor: pointer;
+}
+
+.menu-footer {
+  position: absolute;
+  bottom: 15%;
+  height: 70px;
+  width: 100%;
+  display: flex;  
+  justify-content:  center;
+  align-items: center;
+  background: #;
+}
+
+.menu-footer_item {
+  margin: 20px;
+}
+
+.menu-footer_item a {
+  font-size: 16px;
+  letter-spacing: ;
+  font-family: var(--font-fam1);
+  font-weight: 400;
+  text-decoration: none;
+  color: var(--text-black);
+  display: inline-block; 
+}
+
+.menu-footer_item img {
+  height: 20px;
+  width: 20px;
+  margin: 5px 0 0 0;
+}
+
+.menu-footer_item a:hover {
+  cursor: pointer;
+  text-decoration: line-through;
+  transition: all 0.4s ease-in-out;
+  color: var(--text-white);
+}
+
+
   .phone {
     position: fixed;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: none;
     flex-direction: column;
@@ -550,6 +678,8 @@ textarea::placeholder {
     text-align: center;
     margin: 0;
     font-family: var(--font-fam1);
+    background-color: white;
+    overflow-y: hidden;
   }
 
   .phone h2 {
@@ -570,9 +700,13 @@ textarea::placeholder {
     width: auto;
   }
 
+.nav {
+  height: 100px;
+}
 
 .nav .logo{
-  height: 90px;
+  height: 70px;
+  z-index: 3;
 }
 
 .nav ol a{
@@ -581,19 +715,22 @@ textarea::placeholder {
 
 .main__section {
   height: 80vh;
+
 }
 
 .main__section_content {
   height: 100%;
-  justify-content: flex-start;
+  justify-content: center;
   gap: ;
 } 
 
 .main__section_content img {
   height: 400px;
+  z-index: 1;
 }
 
 .creamy__gradient {
+  display: ;
   filter: blur(70px);
   width: 60%;
   height: 60%;
@@ -601,15 +738,13 @@ textarea::placeholder {
   right: 15%;
 }
 
-
 .main__section_content a {
-  font-weight: 400;
   font-size: 18px;
 }
 
-
 .our__story {
   height: 80vh;
+  display: ;
 }
 
 .our__story_caption {
@@ -617,8 +752,7 @@ textarea::placeholder {
 }
 
 .our__story_caption h6 {
-  margin-top: 30px;
-  font-size: 12px;
+  margin-top: 70px;
 }
 
 .our__story_caption h2 {
@@ -628,12 +762,12 @@ textarea::placeholder {
 
 .our__story_caption p {
   font-size: 13px;
-  padding: 0 4% 20px 4%;
+  padding: 0 6% 20px 6%;
 }
 
 #ring-1 {
-  margin-top: 20px;
-  height: 340px;
+  height: 380px;
+  bottom: -40px;
 }
 
 hr {
@@ -647,6 +781,7 @@ hr {
   align-items: center;
   justify-content: center;
   gap: 20px;
+
 }
 
 .myFooter img {
