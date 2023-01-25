@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./style2.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 	<link href="https://api.fontshare.com/v2/css?f[]=erode@500,400,300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<title>Home</title>
@@ -27,33 +28,51 @@
             <img src="./img/logo-black.png" class="logo">
         </div>
     </nav>
-		-->
+			-->
 	<header class="nav center">
         <img class="logo" src="./img/logo-black.png" alt="">
         <input type="checkbox" name="" class="checkBtn">
         <ol class="center">
             <a href="./index2.html"><li>Home</li></a>
-            <a href="./index2.html"><li>Our story</li></a>
+            <a href="#our__story"><li>Our story</li></a>
             <a href="./404.html"><li>Exhibitions</li></a>
             <a href="./contact.php"><li>Contact </li></a>
         </ol>   
     </header>
 
+    <input type="checkbox" id="active">
+		<label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+		<div class="wrapper">
+			<ul class="menu">
+				<li><a href="./index2.html">Home</a></li>
+				<li><a href="./index2.html">Our story</a></li>
+				<li><a href="./404.html">Exhibitions</a></li>
+				<li><a href="./404.html">Careers</a></li>
+				<li><a href="./404.html">Contact</a></li>
+			</ul>
+		</div>
+
+
+    <!--
     <div class="phone">
     	<h2>404 | Under Maintenance</h2>
     </div>
+	-->
 
 	<section class="main__section" id="main__section">
+		
+
 		<div class="main__section_content">
 		
 			<div class="creamy__gradient"></div>
 		
 			<img id="mainPhoto" src="./img/3.png">
-			<a href="./404.html">Upcoming Exhibitions</a>	
+			<a href="./404.html">Discover Exhibitions</a>	
 		</div>
 	</section>
 	
-	<section class="our__story">
+	
+	<section class="our__story" id="our__story">
 		<div class="our__story_caption">
 			<img id="ring-1" src="./img/75.png" />
 			<img id="ring-2" src="" />
@@ -102,11 +121,11 @@
 		</div>
 	
 	<section class="myFooter">
-		<a href="#">Our story</a>
-		<a href="#">Exhibitions</a>	
+		<a href="#">Home</a>
+		<a href="./404.html">Exhibitions</a>	
 		<img src="./img/logo-black.png">
-		<a href="#">Careers</a>	
-		<a href="#">Contact</a>
+		<a href="./404.html">Careers</a>	
+		<a href="./contact.php">Contact</a>
 	</section>
 
 <script type="text/javascript">  
