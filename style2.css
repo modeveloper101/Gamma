@@ -744,7 +744,6 @@ textarea::placeholder {
 
 .our__story {
   height: 80vh;
-  display: ;
 }
 
 .our__story_caption {
@@ -752,12 +751,11 @@ textarea::placeholder {
 }
 
 .our__story_caption h6 {
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 .our__story_caption h2 {
   font-size: 32px;
-  font-weight: ;
 }
 
 .our__story_caption p {
@@ -767,7 +765,7 @@ textarea::placeholder {
 
 #ring-1 {
   height: 380px;
-  bottom: -40px;
+  bottom: -20px;
 }
 
 hr {
