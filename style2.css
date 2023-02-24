@@ -393,7 +393,7 @@ hr {
 
 /*reveal animation*/
 .reveal {
-  transform: translateY(60px);
+  transform: translateY(70px);
 }
 
 /*hidden on small-devices*/
@@ -571,7 +571,7 @@ hr {
 
 .our__story_caption p {
   font-size: 14px;
-  padding: 0 3% 20px 3%;
+  padding: 0 2% 20px 2%;
 }
 
 #ring-1 {
