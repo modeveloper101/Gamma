@@ -390,7 +390,14 @@ hr {
 
 /*Phone styling*/
 @media only screen and (max-width: 768px) {
-
+/*reveal animation*/
+ .reveal {
+  position: relative;
+  transform: translateY(40px);
+  opacity: 0;
+  transition: transform 2s,opacity 2s;
+}
+  
 /*hidden on small-devices*/
 .nav {
   height: 80px;
