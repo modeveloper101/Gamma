@@ -263,8 +263,8 @@ ol li:last-child {
   position: absolute;
   height: 480px;
   width: auto;
-  left: 10%;
-  bottom: 0;
+  left: 7%;
+  bottom: -40px;
   filter: drop-shadow(10px 10px 14px #909090);
   opacity: ;
 }
@@ -575,8 +575,7 @@ hr {
 }
 
 #ring-1 {
-  height: 380px;
-  bottom: -20px;
+  display: none;
 }
 
 .myFooter {
@@ -590,9 +589,9 @@ hr {
 .myFooter a {
   text-decoration: none;
   font-family: var(--font-fam1);
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text-black);
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .myFooter a:first-child {
