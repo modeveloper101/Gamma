@@ -539,6 +539,7 @@ hr {
   height: 95%;
   width: 100%;
   justify-content: center;  
+  border-raduis: 0px;
 } 
 
 .main__section_content img {
