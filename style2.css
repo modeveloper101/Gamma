@@ -558,12 +558,12 @@ hr {
 
 .our__story_caption {
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .our__story_caption h2 {
   font-size: 34px;
-  margin: 0 10% 40px 10%;
+  margin: 25px 10% 45px 10%;
   text-align: center;
   letter-spacing: 0.5px;
   font-weight: 400;
