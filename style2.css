@@ -563,9 +563,9 @@ hr {
 
 .our__story_caption h2 {
   font-size: 32px;
-  font-weight: 500;
-  margin: 15px 15% 40px 15%;
+  margin: 20px 15% 40px 15%;
   text-align: center;
+  letter-spacing: 0.8;
 }
 
 .our__story_caption p {
