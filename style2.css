@@ -391,6 +391,11 @@ hr {
 /*Phone styling*/
 @media only screen and (max-width: 768px) {
 
+/*reveal animation*/
+.reveal {
+  transform: translateY(40px);
+}
+
 /*hidden on small-devices*/
 .nav {
   height: 80px;
@@ -532,10 +537,9 @@ hr {
 }
 
 .main__section_content {
-  height: 90%;
+  height: 95%;
   width: 100%;
-  justify-content: center;
-  gap: ;
+  justify-content: center;  
 } 
 
 .main__section_content img {
