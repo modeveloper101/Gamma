@@ -247,7 +247,6 @@ ol li:last-child {
   font-weight: 400;
   color: var(--text-black);
   margin: 0 0 30px 0;
-  text-transform: Uppercase;
 }
 
 .our__story_caption p {
@@ -567,8 +566,7 @@ hr {
   margin: 0 10% 40px 10%;
   text-align: center;
   letter-spacing: 0.5px;
-  text-transform: Uppercase;
-   font-weight: 500;
+  font-weight: 400;
 }
 
 .our__story_caption p {
