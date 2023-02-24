@@ -393,7 +393,7 @@ hr {
 
 /*reveal animation*/
 .reveal {
-  transform: translateY(40px);
+  transform: translateY(60px);
 }
 
 /*hidden on small-devices*/
