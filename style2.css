@@ -390,14 +390,7 @@ hr {
 
 /*Phone styling*/
 @media only screen and (max-width: 768px) {
-/*reveal animation*/
- .reveal {
-  position: relative;
-  transform: translateY(40px);
-  opacity: 0;
-  transition: transform 2s,opacity 2s;
-}
-  
+
 /*hidden on small-devices*/
 .nav {
   height: 80px;
@@ -560,20 +553,21 @@ hr {
 }
 
 .our__story_caption {
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
-  text-align: center  ;
+  text-align: left  ;
 }
 
 .our__story_caption h2 {
   font-size: 36px;
-  margin: 30px 0;
-  padding: 0 15%;
+  margin: 15px 0 30px 0;
+  padding: 0 15% 0 7%;
 }
 
 .our__story_caption p {
   font-size: 15px;
-  padding: 0 4% 20px 4%;
+  padding: 0 4% 20px 7%;
+  text-align: left;
 }
 
 #ring-1 {
@@ -600,5 +594,4 @@ hr {
 .myFooter a:first-child {
   display: none;
 }
-
 }
