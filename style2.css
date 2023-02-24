@@ -562,10 +562,11 @@ hr {
 }
 
 .our__story_caption h2 {
-  font-size: 32px;
-  margin: 20px 15% 40px 15%;
+  font-size: 34px;
+  margin: 25px 15% 40px 15%;
   text-align: center;
-  letter-spacing: 0.8;
+  letter-spacing: 1px;
+  text-transform: Uppercase;
 }
 
 .our__story_caption p {
