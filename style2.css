@@ -257,6 +257,7 @@ ol li:last-child {
   color: var(--text-black);
   padding: 0 35% 30px 35%;
   line-height: 1.7;
+  text-transform: Uppercase;
 }
 
 #ring-1 {
