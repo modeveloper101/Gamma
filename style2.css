@@ -183,8 +183,10 @@ ol li:last-child {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgb(206,196,204);
-  background: linear-gradient(0deg, rgba(206,196,204,1) 0%, rgba(150,179,209,1) 100%);
+  background: url('./img/bg-1.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 } 
 
 .main__section_content h1 {
@@ -402,7 +404,7 @@ hr {
 }
 
 .nav .logo{ 
-  margin-right: 45%;
+  margin-right: 45.5%;
   height: 70px;
   z-index: 3;
 }
@@ -413,13 +415,13 @@ hr {
 
 /*phone menu*/
 .wrapper {
-  display: none;
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background: #ECE8DD;
+  background: #CDDBE4;
   clip-path: circle(25px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
   z-index: 2;
@@ -430,27 +432,24 @@ hr {
 }
 
 .menu-btn {
-  display: none;
+  display: block;
   position: absolute;
   right: 20px;
   top: 20px;
-  z-index: 10;
+  z-index: 9999;
   text-align: center;
-  line-height: 50px;
+  line-height: 70px;
   height: 50px;
   width: 50px;
   border:none;
   background: var(--bg-white);
   color: var(--text-black);
-  font-size: 12px;
   cursor: pointer;
-  font-family: var(--font-fam2);
-  font-size: 32px;
-  font-weight: 400;
+  font-size: 24px;
 }
 
 #active:checked ~ .menu-btn {
-  background: #ECE8DD;
+  background: #CDDBE4;
   color: var(--text-black);
 }
 
