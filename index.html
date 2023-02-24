@@ -3,133 +3,75 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./style2.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 	<link href="https://api.fontshare.com/v2/css?f[]=erode@500,400,300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 	<title>Home</title>
 </head>
 <body id="mBody">
-		<!--
-	<nav class="navbar">
-        <div class="navbar-container container">
-            <input type="checkbox" name="" id="">
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div>
-            <ul class="menu-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Our story</a></li>
-                <li><a href="#">Exhibitions</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <img src="./img/logo-black.png" class="logo">
-        </div>
-    </nav>
-			-->
 	<header class="nav center">
-        <img class="logo" src="./img/logo-black.png" alt="">
-        <input type="checkbox" name="" class="checkBtn">
-        <ol class="center">
-            <a href="./index2.html"><li>Home</li></a>
-            <a href="#our__story"><li>Our story</li></a>
-            <a href="./404.html"><li>Exhibitions</li></a>
-            <a href="./contact.php"><li>Contact </li></a>
-        </ol>   
+       <input type="checkbox" name="" class="checkBtn">
+    	<ol class="center" id="navlinks">
+    		<li><a href="./index2.html">Home</a></li>
+    		<li><a href="./company.html">Company</a></li>
+    		<li><a href="./workshop.html">Workshop</a></li>
+      		<img class="logo" src="./img/logo-black.png" alt="">
+      		<li><a href="./exhibitions.html">Exhibitions & Events</a></li>
+    		<li><a href="./contact.php">Contact</a></li>
+  		</ol> 
     </header>
-
+    <!--
+    <div class="navbar">
+  		<ul class="navbar-menu" style="list-style: none;">
+    		<li><a href="./index2.html">Home</a></li>
+    		<li><a href="./company.html">Company</a></li>
+    		<li><a href="./workshop.html">Workshop</a></li>
+    		<li><a href="./exhibitions.html">Exhibitions</a></li>
+    		<li><a href="./contact.php">Contact</a></li>
+  		</ul>
+	</div>
+	-->
     <input type="checkbox" id="active">
 		<label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
-		<div class="wrapper">
-			<ul class="menu">
-				<li><a href="./index2.html">Home</a></li>
-				<li><a href="./index2.html">Our story</a></li>
-				<li><a href="./404.html">Exhibitions</a></li>
-				<li><a href="./404.html">Careers</a></li>
-				<li><a href="./404.html">Contact</a></li>
-			</ul>
-		</div>
-
-
-    <!--
-    <div class="phone">
-    	<h2>404 | Under Maintenance</h2>
-    </div>
-	-->
-
+	<div class="wrapper">
+		<ul class="menu">
+			<li><a href="./index2.html">Home</a></li>
+			<li><a href="./index2.html">Our story</a></li>
+			<li><a href="./404.html">Exhibitions</a></li>
+			<li><a href="./404.html">Contact</a></li>
+		</ul>
+	</div>
 	<section class="main__section" id="main__section">
-		
-
 		<div class="main__section_content">
-		
-			<div class="creamy__gradient"></div>
-		
-			<img id="mainPhoto" src="./img/3.png">
-			<a href="./404.html">Discover Exhibitions</a>	
+			<img id="mainPhoto" src="./img/jewelry-5.png">
 		</div>
 	</section>
-	
-	
-	<section class="our__story" id="our__story">
+	<section class="our__story reveal" id="our__story">
 		<div class="our__story_caption">
+			<!--
 			<img id="ring-1" src="./img/75.png" />
 			<img id="ring-2" src="" />
-			<h6>Our story</h6>
-			<h2>Fine jewelry since 1984</h2>
-			<p>Gamma Creations combines traditional craftsmanship, a respect for time-honoured techniques, with cutting edge technology to create pieces where care and devotion are reflected in every facet. Each creation is produced entirely in-house, never leaving our workshop studio until it is sent to the customer.  </p>
-			<p> By totally controlling the production process at every step we ensure the very highest standards of quality and service. </p>		
+			-->
+			<h2 class="">European Heritage Global Inspiration</h2>
+			<p class="">Gamma Creations combines traditional craftsmanship, a respect for time-honoured techniques, with cutting edge technology to create pieces where care and devotion are reflected in every facet. Each creation is produced entirely in-house, never leaving our workshop studio until it is sent to the customer.  </p>
+			<p class=""> By totally controlling the production process at every step we ensure the very highest standards of quality and service. </p>		
 		</div>
 	</section>
-<!--
-	<section class="testing">
-		<div class="testing-container">
-			<img src="./img/66.png">
+	<div style="position: relative; height: auto; width: 100%; background-color: white; z-index: 9999; display: flex; justify-content: center; align-items: center;">
+		<hr>
+	</div>
+	<section class="myFooter" >
+		<a href="#">Linkedin</a>
+    	<a href="#">&copy; 2023 GAMMA CREATIONS. All Rights Reserved</a> 
+		<!--
+		<div class="reserved">
+			<a href="">Linkedin</a>
+			<p>© 2023 Gamma Creations</p>
 		</div>
-		<div class="testing-content">
-			<p>Gamma Creations combines traditional craftsmanship, a respect for time-honoured techniques, with cutting edge technology to create pieces where care and devotion are reflected in every facet. Each creation is produced entirely in-house, never leaving our workshop studio until it is sent to the customer.</p>
-		</div>
-	</section>
-
-	<section class="workshop reveal">
-		<div class="workshop__title">
-			<h2>Our workshop</h2>
-		</div>
-		<div class="workshop__items">
-			<div class="workshop__item">
-				<img src="./img/01.jpg">
-		
-				<p>Get in touch with our consultants and designers to define and refine your design idea. After the design is confirmed, the creation processes can begin.</p>
-			</div>
-			<div class="workshop__item">
-				<img src="./img/02.jpg">
-				
-				<p>Our development team is able to produce your design in CAD, with the help of our jewellery technician to iron out the technicalities.</p>
-				
-			</div>
-			<div class="workshop__item">
-				<img src="./img/09.jpg">
-			
-				<p>With over 30 years of experience in the luxury jewelery production business, we can deliver high-quality finished goods for you or your customer.</p>
-			</div>
-		</div>
-	</section>
 		-->
-		<div style="position: relative; height: auto; width: 100%; background-color: white; z-index: 9999; display: flex; justify-content: center; align-items: center;">
-			<hr>
-		</div>
-	
-	<section class="myFooter">
-		<a href="#">Home</a>
-		<a href="./404.html">Exhibitions</a>	
-		<img src="./img/logo-black.png">
-		<a href="./404.html">Careers</a>	
-		<a href="./contact.php">Contact</a>
 	</section>
-
 <script type="text/javascript">  
-
 	window.addEventListener('scroll', reveal);
 
 	function reveal() {
@@ -139,7 +81,7 @@
 
 			var windowheight =  window.innerHeight;
 			var revealtop = reveals[i].getBoundingClientRect().top;
-			var revealpoint = 150;
+			var revealpoint = 50;
 
 			if (revealtop < windowheight - revealpoint) {
 				reveals[i].classList.add('active');
@@ -149,30 +91,17 @@
 		}
 
 	}
-
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 <script type="text/javascript">
-		var colors = [ "#FFF", "#D6E4E5", "#EFF5F5" ];
-
-		var color = 0;
-
-		const mainElement = document.getElementById("mBody");
-
-		function changeBg() {
-			mainElement.style.backgroundColor = colors[color];
-			mainElement.style.transition = "all 0.8s ease";
-			color > 1 ? color = 0 : color++;
-		}
-
-		var images = ["./img/3.png", "./img/71.png", "./img/ring88.png"];
+		var images = ["./img/jewelry-5.png", "./img/jewelry-2.png", "./img/jewelry-3.png", "./img/jewelry-4.png"];
 		var index = 0;
 		const imgElement = document.getElementById("mainPhoto");
 
 		function change() {
 			imgElement.src = images[index];
 			//index === 1 ? imgElement.style.height = "390px" : imgElement.style.height = "400px";
-			index > 1 ? index = 0 : index++;
+			index > 2 ? index = 0 : index++;
 		}
 
 		window.onload = function () {
