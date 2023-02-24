@@ -247,6 +247,7 @@ ol li:last-child {
   font-weight: 400;
   color: var(--text-black);
   margin: 0 0 30px 0;
+  text-transform: Uppercase;
 }
 
 .our__story_caption p {
@@ -257,7 +258,6 @@ ol li:last-child {
   color: var(--text-black);
   padding: 0 35% 30px 35%;
   line-height: 1.7;
-  text-transform: Uppercase;
 }
 
 #ring-1 {
@@ -568,11 +568,12 @@ hr {
   text-align: center;
   letter-spacing: 0.5px;
   text-transform: Uppercase;
+   font-weight: 500;
 }
 
 .our__story_caption p {
   font-size: 14px;
-  font-weight: 500;
+
   padding: 0 4% 20px 4%;
 }
 
