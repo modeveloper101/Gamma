@@ -560,7 +560,14 @@ hr {
   align-items: center;
   justify-content: center;
 }
-
+  
+.our__story_caption h6 {
+  font-family: var(--font-fam2);
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--text-grey);
+}
+  
 .our__story_caption h2 {
   font-size: 32px;
   margin: 0 10% 35px 10%;
