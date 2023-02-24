@@ -557,21 +557,20 @@ hr {
 }
 
 .our__story_caption {
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
-  text-align: left  ;
 }
 
 .our__story_caption h2 {
-  font-size: 36px;
-  margin: 20px 0;
-  padding: 0 15% 0 7%;
+  font-size: 32px;
+  font-weight: 500;
+  margin: 15px 15% 40px 15%;
+  text-align: center;
 }
 
 .our__story_caption p {
   font-size: 14px;
-  padding: 0 4% 20px 7%;
-  text-align: left;
+  padding: 0 4% 20px 4%;
 }
 
 #ring-1 {
