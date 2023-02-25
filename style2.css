@@ -549,7 +549,7 @@ hr {
 
 /*home page*/
 .main__section {
-  height: 80vh;
+  height: 85vh;
 }
 
 .main__section_content {
@@ -587,7 +587,7 @@ hr {
 }
 
 .our__story_caption h2 {
-  font-size: 42px;
+  font-size: 46px;
   margin: 48px 20% 35px 20%;
   text-align: center;
   letter-spacing: 0.5px;
