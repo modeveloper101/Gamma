@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./style2.css">
+	<link rel="stylesheet" type="text/css" href="./style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
 	<link href="https://api.fontshare.com/v2/css?f[]=erode@500,400,300&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -14,11 +14,12 @@
        <input type="checkbox" name="" class="checkBtn">
     	<ol class="center" id="navlinks">
     		<li><a href="./index2.html">Home</a></li>
-    		<li><a href="./company.html">Company</a></li>
-    		<li><a href="./workshop.html">Workshop</a></li>
+    		<li><a href="./404.html">Company</a></li>
+    		<li><a href="./404.html">Workshop</a></li>
+    		<h3 id="logo-text">Gamma Creations</h3>
       		<img class="logo" src="./img/logo-black.png" alt="">
-      		<li><a href="./exhibitions.html">Exhibitions & Events</a></li>
-    		<li><a href="./contact.php">Contact</a></li>
+      		<li><a href="./404.html">Exhibitions & Events</a></li>
+    		<li><a href="./404.php">Contact</a></li>
   		</ol> 
     </header>
     <!--
@@ -33,12 +34,14 @@
 	</div>
 	-->
     <input type="checkbox" id="active">
+
 		<label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
 	<div class="wrapper">
 		<ul class="menu">
 			<li><a href="./index2.html">Home</a></li>
-			<li><a href="./index2.html">Our story</a></li>
-			<li><a href="./404.html">Exhibitions</a></li>
+			<li><a href="./index2.html">Company</a></li>
+			<li><a href="./index2.html">Workshop</a></li>
+			<li><a href="./404.html">Exhibitions & Events</a></li>
 			<li><a href="./404.html">Contact</a></li>
 		</ul>
 	</div>
@@ -47,16 +50,18 @@
 			<img id="mainPhoto" src="./img/jewelry-5.png">
 		</div>
 	</section>
-	<section class="our__story" id="our__story">
+	<section class="our__story reveal" id="our__story">
 		<div class="our__story_caption">
-		
-			<img id="ring-1" src="./img/jewelry-6.png" />
 				<!--
-			<img id="ring-2" src="" />
-			-->
+			<img id="ring-2" src="./img/jewelry-6.png" />
+		
+			<img id="ring-2" src="./img/jewelry-11.png" />
+				-->
 			<h2 class="">Fine Jewelry Since 1984</h2>
-			<p class="">Gamma Creations combines traditional craftsmanship, a respect for time-honoured techniques, with cutting edge technology to create pieces where care and devotion are reflected in every facet. Each creation is produced entirely in-house, never leaving our workshop studio until it is sent to the customer.  </p>
+			<p class="">Gamma Creations combines traditional craftsmanship, a respect for time-honoured techniques, with cutting edge technology to create pieces where care and devotion are reflected in every facet.</p>
+			<p>Each creation is produced entirely in-house, never leaving our workshop studio until it is sent to the customer. </p>
 			<p class=""> By totally controlling the production process at every step we ensure the very highest standards of quality and service. </p>		
+
 		</div>
 	</section>
 	<div style="position: relative; height: auto; width: 100%; background-color: white; z-index: 9999; display: flex; justify-content: center; align-items: center;">
@@ -95,7 +100,7 @@
 </script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 <script type="text/javascript">
-		var images = ["./img/jewelry-5.png", "./img/jewelry-2.png", "./img/jewelry-9.png", "./img/jewelry-1.png"];
+		var images = ["./img/jewelry-5.png", "./img/jewelry-2.png", "./img/jewelry-9.png", "./img/jewelry-4.png"];
 		var index = 0;
 		const imgElement = document.getElementById("mainPhoto");
 
