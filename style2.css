@@ -33,6 +33,10 @@ html, body {
   display: none;
 }
 
+#logo-text {
+  display: none;
+}
+
 .menu-btn {
   display: none;
 }
@@ -240,15 +244,18 @@ ol li:last-child {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0;
+}
+
+.our__story_caption h6 {
+  display: none;
 }
 
 .our__story_caption h2 {
   font-family: var(--font-fam1);
-  font-size: 38px;
+  font-size: 42px;
   font-weight: 400;
   color: var(--text-black);
-  margin: 0 0 30px 0;
+  margin: 0 0 40px 0;
 }
 
 .our__story_caption p {
@@ -257,7 +264,7 @@ ol li:last-child {
   font-size: 15.5px;
   font-weight: 300;
   color: var(--text-black);
-  padding: 0 35% 30px 35%;
+  padding: 0 33% 30px 33%;
   line-height: 1.7;
 }
 
@@ -265,18 +272,18 @@ ol li:last-child {
   position: absolute;
   height: 480px;
   width: auto;
-  left: 7%;
-  bottom: -40px;
-  filter: drop-shadow(10px 10px 14px #909090);
+  left: 10%;
+  bottom: -30px;
+
   opacity: ;
 }
 
 #ring-2 {
   position: absolute;
-  height:340px;
+  height:480px;
   width: auto;
-  right: 10%;
-  bottom: 7%;
+  right: 7%;
+  bottom:-40px;
   filter: drop-shadow(10px 10px 14px #909090);
   opacity: ;
 }
@@ -284,13 +291,14 @@ ol li:last-child {
 .our__story_caption a {
   text-decoration: none;
   background: transparent;
-  color: var(--text-grey);
+  color: var(--text-black);
   font-family: var(--font-fam2);
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 11px;
-  padding: 12px 8px;
-  border-bottom: 1px solid var(--text-grey);
+  padding: 10px 32px;
+  border: 1px solid var(--text-black);
+  border-radius: 24px ;
   letter-spacing: 1px;
   margin-top: 10px;
 }
@@ -400,13 +408,11 @@ hr {
 
 /*hidden on small-devices*/
 .nav {
-  height: 80px;
+  height: 60px;
 }
 
 .nav .logo{ 
-  margin-right: 45.5%;
-  height: 70px;
-  z-index: 3;
+  display: none;
 }
 
 .nav ol a{
@@ -414,6 +420,17 @@ hr {
 }
 
 /*phone menu*/
+
+#logo-text {
+  display: block;
+  color: var(--text-black);
+  font-family: var(--font-fam1);
+  font-weight: 500;
+  font-size: 24px;
+  z-index: 9999;
+  padding-top: 4%;
+}
+
 .wrapper {
   display: block;
   position: absolute;
@@ -421,7 +438,7 @@ hr {
   left: 0;
   height: 100%;
   width: 100%;
-  background: #CDDBE4;
+  background: #DBE3E5;
   clip-path: circle(25px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
   z-index: 2;
@@ -438,7 +455,7 @@ hr {
   top: 20px;
   z-index: 9999;
   text-align: center;
-  line-height: 70px;
+  line-height: 50px;
   height: 50px;
   width: 50px;
   border:none;
@@ -449,7 +466,7 @@ hr {
 }
 
 #active:checked ~ .menu-btn {
-  background: #CDDBE4;
+  background: #DBE3E5;
   color: var(--text-black);
 }
 
@@ -473,16 +490,16 @@ hr {
 
 .wrapper ul li {
   padding: 0;
-  margin: 30px 0;
+  margin: 50px 0;
 }
 
 .wrapper ul li a {
   position: relative;
   color: var(--text-black);
   text-decoration: none;
-  font-size: 28px;
+  font-size: 32px;
   font-family: var(--font-fam1);
-  font-weight: 400;
+  font-weight: 300;
   padding: 10px;
   text-transform: uppercase;
 }
@@ -538,8 +555,8 @@ hr {
 .main__section_content {
   height: 95%;
   width: 100%;
+  border-radius: 0;
   justify-content: center;  
-  border-radius: 0px;
 } 
 
 .main__section_content img {
@@ -552,25 +569,26 @@ hr {
 }
 
 .our__story {
-  height: 50vh;
+  height: 60vh;
   display: ;
 }
 
 .our__story_caption {
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
-  
+
 .our__story_caption h6 {
+  display: block;
   font-family: var(--font-fam2);
   font-size: 13px;
   font-weight: 300;
   color: var(--text-grey);
 }
-  
+
 .our__story_caption h2 {
-  font-size: 32px;
-  margin: 0 10% 35px 10%;
+  font-size: 34px;
+  margin: 48px 10% 35px 10%;
   text-align: center;
   letter-spacing: 0.5px;
   font-weight: 400;
@@ -604,45 +622,4 @@ hr {
 .myFooter a:first-child {
   display: none;
 }
-
-/*error page*/
-.error {
-  height: 80vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.error h1 {
-  text-transform: uppercase;
-  font-size: 28px;
-  font-family: var(--font-fam1);
-  font-weight: 400;
-  margin: 0 0 30px 0;
-  color: var(--text-black);
-}
-
-.error p {
-  font-size: 13px;
-  text-align: center;
-  padding: 0 4%;
-  line-height: 1.5;
-  font-family: var(--font-fam2);
-  font-weight: 300;
-  color: var(--text-black);
-}
-
-.error a {
-  text-decoration: none;
-  color: var(--text-grey);
-}
-
-.error a:hover {
-  cursor: pointer;
-  color: darkblue;
-  transition: all 0.4s ease-in-out;
-}
-
 }
